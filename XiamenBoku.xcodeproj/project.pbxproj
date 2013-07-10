@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FD85B93178D660B003D1567 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD85B92178D660B003D1567 /* UIKit.framework */; };
+		0FD85B95178D660B003D1567 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD85B94178D660B003D1567 /* Foundation.framework */; };
+		0FD85B97178D660B003D1567 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD85B96178D660B003D1567 /* CoreGraphics.framework */; };
+		0FD85B9D178D660B003D1567 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD85B9B178D660B003D1567 /* InfoPlist.strings */; };
+		0FD85B9F178D660B003D1567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD85B9E178D660B003D1567 /* main.m */; };
+		0FD85BA3178D660B003D1567 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD85BA2178D660B003D1567 /* AppDelegate.m */; };
+		0FD85BA5178D660B003D1567 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD85BA4178D660B003D1567 /* Default.png */; };
+		0FD85BA7178D660B003D1567 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD85BA6178D660B003D1567 /* Default@2x.png */; };
+		0FD85BA9178D660B003D1567 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD85BA8178D660B003D1567 /* Default-568h@2x.png */; };
+		0FD85BAC178D660B003D1567 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD85BAB178D660B003D1567 /* ViewController.m */; };
+		0FD85BAF178D660B003D1567 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD85BAD178D660B003D1567 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FD85B8E178D660B003D1567 /* XiamenBoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiamenBoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD85B92178D660B003D1567 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0FD85B94178D660B003D1567 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0FD85B96178D660B003D1567 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0FD85B9A178D660B003D1567 /* XiamenBoku-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XiamenBoku-Info.plist"; sourceTree = "<group>"; };
+		0FD85B9C178D660B003D1567 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FD85B9E178D660B003D1567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FD85BA0178D660B003D1567 /* XiamenBoku-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XiamenBoku-Prefix.pch"; sourceTree = "<group>"; };
+		0FD85BA1178D660B003D1567 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FD85BA2178D660B003D1567 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FD85BA4178D660B003D1567 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0FD85BA6178D660B003D1567 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0FD85BA8178D660B003D1567 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0FD85BAA178D660B003D1567 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FD85BAB178D660B003D1567 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FD85BAE178D660B003D1567 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FD85B8B178D660B003D1567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD85B93178D660B003D1567 /* UIKit.framework in Frameworks */,
+				0FD85B95178D660B003D1567 /* Foundation.framework in Frameworks */,
+				0FD85B97178D660B003D1567 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD85B83178D660B003D1567 = {
+			isa = PBXGroup;
+			children = (
+				0FD85B98178D660B003D1567 /* XiamenBoku */,
+				0FD85B91178D660B003D1567 /* Frameworks */,
+				0FD85B8F178D660B003D1567 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FD85B8F178D660B003D1567 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FD85B8E178D660B003D1567 /* XiamenBoku.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FD85B91178D660B003D1567 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD85B92178D660B003D1567 /* UIKit.framework */,
+				0FD85B94178D660B003D1567 /* Foundation.framework */,
+				0FD85B96178D660B003D1567 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FD85B98178D660B003D1567 /* XiamenBoku */ = {
+			isa = PBXGroup;
+			children = (
+				0FD85BA1178D660B003D1567 /* AppDelegate.h */,
+				0FD85BA2178D660B003D1567 /* AppDelegate.m */,
+				0FD85BAA178D660B003D1567 /* ViewController.h */,
+				0FD85BAB178D660B003D1567 /* ViewController.m */,
+				0FD85BAD178D660B003D1567 /* ViewController.xib */,
+				0FD85B99178D660B003D1567 /* Supporting Files */,
+			);
+			path = XiamenBoku;
+			sourceTree = "<group>";
+		};
+		0FD85B99178D660B003D1567 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FD85B9A178D660B003D1567 /* XiamenBoku-Info.plist */,
+				0FD85B9B178D660B003D1567 /* InfoPlist.strings */,
+				0FD85B9E178D660B003D1567 /* main.m */,
+				0FD85BA0178D660B003D1567 /* XiamenBoku-Prefix.pch */,
+				0FD85BA4178D660B003D1567 /* Default.png */,
+				0FD85BA6178D660B003D1567 /* Default@2x.png */,
+				0FD85BA8178D660B003D1567 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FD85B8D178D660B003D1567 /* XiamenBoku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD85BB2178D660B003D1567 /* Build configuration list for PBXNativeTarget "XiamenBoku" */;
+			buildPhases = (
+				0FD85B8A178D660B003D1567 /* Sources */,
+				0FD85B8B178D660B003D1567 /* Frameworks */,
+				0FD85B8C178D660B003D1567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XiamenBoku;
+			productName = XiamenBoku;
+			productReference = 0FD85B8E178D660B003D1567 /* XiamenBoku.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FD85B85178D660B003D1567 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ibokan;
+			};
+			buildConfigurationList = 0FD85B88178D660B003D1567 /* Build configuration list for PBXProject "XiamenBoku" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0FD85B83178D660B003D1567;
+			productRefGroup = 0FD85B8F178D660B003D1567 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FD85B8D178D660B003D1567 /* XiamenBoku */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FD85B8C178D660B003D1567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD85B9D178D660B003D1567 /* InfoPlist.strings in Resources */,
+				0FD85BA5178D660B003D1567 /* Default.png in Resources */,
+				0FD85BA7178D660B003D1567 /* Default@2x.png in Resources */,
+				0FD85BA9178D660B003D1567 /* Default-568h@2x.png in Resources */,
+				0FD85BAF178D660B003D1567 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FD85B8A178D660B003D1567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD85B9F178D660B003D1567 /* main.m in Sources */,
+				0FD85BA3178D660B003D1567 /* AppDelegate.m in Sources */,
+				0FD85BAC178D660B003D1567 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0FD85B9B178D660B003D1567 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FD85B9C178D660B003D1567 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0FD85BAD178D660B003D1567 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FD85BAE178D660B003D1567 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FD85BB0178D660B003D1567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0FD85BB1178D660B003D1567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FD85BB3178D660B003D1567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XiamenBoku/XiamenBoku-Prefix.pch";
+				INFOPLIST_FILE = "XiamenBoku/XiamenBoku-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0FD85BB4178D660B003D1567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XiamenBoku/XiamenBoku-Prefix.pch";
+				INFOPLIST_FILE = "XiamenBoku/XiamenBoku-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FD85B88178D660B003D1567 /* Build configuration list for PBXProject "XiamenBoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD85BB0178D660B003D1567 /* Debug */,
+				0FD85BB1178D660B003D1567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FD85BB2178D660B003D1567 /* Build configuration list for PBXNativeTarget "XiamenBoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD85BB3178D660B003D1567 /* Debug */,
+				0FD85BB4178D660B003D1567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FD85B85178D660B003D1567 /* Project object */;
+}
