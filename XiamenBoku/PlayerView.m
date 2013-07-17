@@ -89,12 +89,12 @@
         self.mainText.backgroundColor=[UIColor clearColor];
         self.mainText.font=[UIFont systemFontOfSize:18];
         self.mainText.editable=NO;
-        self.mainText.text=@"我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！我是内容！！！";
+        self.mainText.text=@"鹰的重生";
         [self.playView addSubview:self.mainText];
         
         self.titleLab=[[UILabel alloc]init];
         self.titleLab.frame=CGRectMake(742/2-580/2, 30, 580, 40);
-        self.titleLab.text=@"我和我的小伙伴们都惊呆了！！！";
+        self.titleLab.text=@"鹰的重生";
         self.titleLab.font=[UIFont boldSystemFontOfSize:24];
         self.titleLab.backgroundColor=[UIColor clearColor];
         [self.playView addSubview:self.titleLab];

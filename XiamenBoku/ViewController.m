@@ -322,6 +322,19 @@
     [v6 addSubview:xiangmu];
     [v6 addSubview:mu];
     
+    FirstView *v66=[[FirstView alloc]init];
+    v66.imgV1.image=[UIImage imageNamed:@"xiangmu"];
+    v66.lable1.text=@"一个点子激发的潜力！！";
+    v66.imgV2.image=[UIImage imageNamed:@"weifeng"];
+    v66.imgV3.image=[UIImage imageNamed:@"zhaodi"];
+    v66.imgV4.image=[UIImage imageNamed:@"dianying"];
+    v66.imgV5.image=[UIImage imageNamed:@"more"];
+    v66.lable2.text=@"威锋新闻";
+    v66.lable3.text=@"找地";
+    v66.lable4.text=@"电影讯息";
+    [v6 addSubview:v66];
+    
+    
     //==========================================第七页========================================
     //第七页
     UIView *view7=[ModelCreat createWithView:[UIImage imageNamed:@"bg1"]
@@ -375,25 +388,20 @@
                                       andFrame:CGRectMake(50, 62, 880, 670)];
     [view8 addSubview:v8];
     
+    UIImageView *imgV8=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 1024, 211)];
+    imgV8.image=[UIImage imageNamed:@"zaixian.png"];
+    [v8 addSubview:imgV8];
+    
+    
+    
     //研发中心
     UIView *yanfa=[ModelCreat createWithView:[UIImage imageNamed:@"snav8"]
                                      andFrame:CGRectMake(VIEW_X, VIEW_Y, VIEW_WIDTH, VIEW_HEIGHT)
                                andViewWithTag:nil];
-    UILabel *yan=[ModelCreat createWithLable:@"研发中心" andFrame:CGRectMake(LABLE_X, LABLE_Y, 200, LABLE_HEIGHT) andTitleColor:[UIColor redColor] andTitleSize:20];
+    UILabel *yan=[ModelCreat createWithLable:@"在线报名" andFrame:CGRectMake(LABLE_X, LABLE_Y, 200, LABLE_HEIGHT) andTitleColor:[UIColor redColor] andTitleSize:20];
     yan.backgroundColor=[UIColor clearColor];
     [v8 addSubview:yanfa];
     [v8 addSubview:yan];
-
-
-
-    
-
-    
-
-    
-
-    
-    
     
     self.leftBtn=[ModelCreat createWithNormalImage:[UIImage imageNamed:@"pull_out.png"]
                                                andFrame:CGRectMake(0, 748/2-25, 50, 80)
@@ -422,9 +430,7 @@
         [self.leftView addSubview:tmp];
                 
     }
-    
-    
-    self.titleAry=[[NSMutableArray alloc]initWithObjects:@"博看家园",@"精英师资",@"就业明星",@"联系我们",@"博看介绍",@"项目实训",@"校企合作",@"研发中心", nil];
+    self.titleAry=[[NSMutableArray alloc]initWithObjects:@"博看家园",@"精英师资",@"就业明星",@"联系我们",@"博看介绍",@"项目实训",@"校企合作",@"在线报名", nil];
     for (int i=0; i<8; i++) {
         UILabel *titleLable=[ModelCreat
                              createWithLable:[NSString stringWithFormat:@"%@",self.titleAry[i]]

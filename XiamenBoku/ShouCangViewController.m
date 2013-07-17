@@ -64,7 +64,7 @@
     [self.view addSubview:self.table];
     
     self.gotDataAry=[[NSMutableArray alloc]init];
-    Collect *col=[Collect findByid:0];
+    Collect *col=[Collect findByid:2];
     NSLog(@"str=%@",col);
 
 //    NSLog(@"得到的数据:%@",self.gotDataAry);
