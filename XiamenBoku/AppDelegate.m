@@ -11,7 +11,7 @@
 #import "ViewController.h"
 
 
-
+#import <BaiduSocialShare/BDSocialShareSDK.h>
 
 
 
@@ -23,9 +23,18 @@
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     
-    
     self.window.rootViewController =self.viewController;
     [self.window makeKeyAndVisible];
+    
+    //设置百度分享SDK
+    NSArray *platForms=[NSArray arrayWithObjects:kBD_SOCIAL_SHARE_PLATFORM_SINAWEIBO,kBD_SOCIAL_SHARE_PLATFORM_QQWEIBO,kBD_SOCIAL_SHARE_PLATFORM_QQZONE,kBD_SOCIAL_SHARE_PLATFORM_KAIXIN,kBD_SOCIAL_SHARE_PLATFORM_WEIXIN_SESSION,kBD_SOCIAL_SHARE_PLATFORM_WEIXIN_TIMELINE,
+                        kBD_SOCIAL_SHARE_PLATFORM_EMAIL,
+                        kBD_SOCIAL_SHARE_PLATFORM_SMS,nil];
+    [BDSocialShareSDK registerApiKey:@"dHwDe5TTTtFEv4MOgoeTGLvX" andSupportPlatforms:platForms];
+    [BDSocialShareSDK registerWXApp:@"wx712df8473f2a1dbe"];
+    [BDSocialShareSDK enableSinaWeiboSSOWithAppId:@"319137445"];
+    [BDSocialShareSDK enableQQSSOWithAppId:@"100358052"];
+    
     return YES;
 }
 

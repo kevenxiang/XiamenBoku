@@ -17,6 +17,7 @@
 #import "SearchbViewController.h"
 #import "PlayerView.h"
 #import "HelpViewController.h"
+#import "LinkViewController.h"
 
 
 
@@ -30,19 +31,26 @@
 -(void)player:(UITapGestureRecognizer *)sender
 {
     
+    self.pla=[[PlayerView alloc]initWithFrame:CGRectMake(100,2048, 742, 727)];
+    [self.view addSubview:self.pla];
+
     [UIView animateWithDuration:1 animations:^{
             self.pla.frame=CGRectMake(100, 50, 742, 727);
-            self.pla.playView.frame=CGRectMake(0, 0, 742, 727);
+
         }];
     
           }
 
 -(void)moreView:(UITapGestureRecognizer *)sender
 {
-    NSLog(@"点击");
+   
 
+    self.more=[[MoreView alloc]initWithFrame:CGRectMake(100, 1024*2, 742, 727)];
+    [self.view addSubview:self.more];
+    
     [UIView animateWithDuration:1 animations:^{
         self.more.frame=CGRectMake(100, 50, 747, 727);
+        
     }];
 }
 
@@ -230,8 +238,8 @@
     [v2 addSubview:view22];
     imgV22.userInteractionEnabled=YES;
     
-    self.more=[[MoreView alloc]initWithFrame:CGRectMake(100, 1024*2, 742, 727)];
-    [self.view addSubview:self.more];
+//    self.more=[[MoreView alloc]initWithFrame:CGRectMake(100, 1024*2, 742, 727)];
+//    [self.view addSubview:self.more];
     
     UITapGestureRecognizer *tap1=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(moreView:)];
     [view22 addGestureRecognizer:tap1];
@@ -404,13 +412,15 @@
     [v8 addSubview:yan];
     
     //在线报名button
-//    UIButton *ziaxianBtn=[ModelCreat createWithNormalImage:nil
-//                                                  andFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
-//                                           andPressedImage:<#(UIImage *)#>
-//                                                  andTitle:<#(NSString *)#>
-//                                                 andTarget:<#(id)#>
-//                                                 andAction:<#(SEL)#>
-//                                                  andEvent:<#(UIControlEvents)#>]
+    UIButton *ziaxianBtn=[ModelCreat createWithNormalImage:nil
+                                                  andFrame:CGRectMake(830, 150, 200, 100)
+                                           andPressedImage:nil
+                                                  andTitle:nil
+                                                 andTarget:self
+                                                 andAction:@selector(link:)
+                                                  andEvent:UIControlEventTouchUpInside];
+    ziaxianBtn.backgroundColor=[UIColor clearColor];
+    [view8 addSubview:ziaxianBtn];
     
     self.leftBtn=[ModelCreat createWithNormalImage:[UIImage imageNamed:@"pull_out.png"]
                                                andFrame:CGRectMake(0, 748/2-25, 50, 80)
@@ -515,12 +525,19 @@
     [self.view addSubview:bokan];
     
     
-    self.pla=[[PlayerView alloc]initWithFrame:CGRectMake(100,2048, 742, 727)];
-//    self.pla.playMovie.view.frame=CGRectMake(0, 2048, 580, 435);
-    [self.view addSubview:self.pla];
-  
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+//在线报名
+-(void)link:(id)sender
+{
+    LinkViewController *link=[[LinkViewController alloc]init];
+    [self presentViewController:link animated:YES completion:^{
+        NULL;
+    }];
+}
+
 
 //下载
 -(void)xiazai:(id)sender

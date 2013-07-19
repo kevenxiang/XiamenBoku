@@ -9,6 +9,7 @@
 #import "PlayerView.h"
 #import "ModelCreat.h"
 #import "ViewController.h"
+#import <BaiduSocialShare/BDSocialShareSDK.h>
 
 
 @implementation PlayerView
@@ -98,6 +99,16 @@
         self.titleLab.font=[UIFont boldSystemFontOfSize:24];
         self.titleLab.backgroundColor=[UIColor clearColor];
         [self.playView addSubview:self.titleLab];
+        
+        NSDate *da=[[NSDate alloc]init];
+        self.timeLable=[[UILabel alloc]init];
+        self.timeLable.frame=CGRectMake(560, 60, 120, 20);
+        NSString *time=[NSString stringWithString:[da descriptionWithLocale:nil]];
+        self.timeLable.textAlignment=NSTextAlignmentCenter;
+        self.timeLable.backgroundColor=[UIColor clearColor];
+        self.timeLable.text=time;
+        [self.playView addSubview:self.timeLable];
+        
 
         
         // Initialization code
@@ -105,14 +116,15 @@
     return self;
 }
 
+
+
 -(void)closeMV:(UIButton *)sender
 {
     [UIView animateWithDuration:1 animations:^{
         self.playView.frame=CGRectMake(100,2048, 742, 727);
         self.frame=CGRectMake(100,2048, 742, 727);
     }];
-//    ViewController *v=[[ViewController alloc]init];
-//    v.alph=0.5;
+    
     [self.mpC stop];
 
 }
@@ -120,7 +132,7 @@
 -(void)playMV:(UIButton *)sender
 {
     [self.mpC play];
-    self.Playbtn.hidden=YES;
+    [self.Playbtn removeFromSuperview];
 }
 
 -(void)collectMV:(UIButton *)sender
@@ -130,6 +142,25 @@
 
 -(void)shareMV:(UIButton *)sender
 {
+    BDSocialShareContent *content = [BDSocialShareContent shareContentWithDescription:self.mainText.text url:@"http://www.zhizhang.com/more/download.php?appid=19" title:@"百度社会化分享"];
+    //    [content addImageWithImageSource:[UIImage imageNamed:@"share_small.png"] imageUrl:@"http://apps.bdimg.com/developer/static/04171450/developer/images/icon/terminal_adapter.png"];
+//    [content addImageWithImageSource:self.playView.image imageUrl:@"http://www.zhizhang.com/more/download.php?appid=19"];
+    [BDSocialShareSDK showShareMenuWithShareContent:content menuStyle:BD_SOCIAL_SHARE_MENU_THEME_STYLE result:^(SHARE_RESULT requestResult, NSString *shareType, id response, NSError *error) {
+        if (requestResult == BD_SOCIAL_SHARE_SUCCESS) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享成功" message:[NSString stringWithFormat:@"%@分享成功",shareType] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alert show];
+            NSLog(@"%@分享成功",shareType);
+            
+            
+            
+        } else if (requestResult == BD_SOCIAL_SHARE_CANCEL){
+            NSLog(@"分享取消");
+        } else if (requestResult == BD_SOCIAL_SHARE_FAIL){
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败" message:[NSString stringWithFormat:@"%@分享失败\n error code:%d;\n error message:%@",shareType,error.code,[error localizedDescription]] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alert show];
+            NSLog(@"%@分享失败\n error code:%d;\n error message:%@",shareType,error.code,[error localizedDescription]);
+        }
+    }];
 
 }
 
