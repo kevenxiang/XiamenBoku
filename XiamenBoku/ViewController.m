@@ -394,7 +394,7 @@
     
     
     
-    //研发中心
+    //在线报名
     UIView *yanfa=[ModelCreat createWithView:[UIImage imageNamed:@"snav8"]
                                      andFrame:CGRectMake(VIEW_X, VIEW_Y, VIEW_WIDTH, VIEW_HEIGHT)
                                andViewWithTag:nil];
@@ -402,6 +402,15 @@
     yan.backgroundColor=[UIColor clearColor];
     [v8 addSubview:yanfa];
     [v8 addSubview:yan];
+    
+    //在线报名button
+//    UIButton *ziaxianBtn=[ModelCreat createWithNormalImage:nil
+//                                                  andFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+//                                           andPressedImage:<#(UIImage *)#>
+//                                                  andTitle:<#(NSString *)#>
+//                                                 andTarget:<#(id)#>
+//                                                 andAction:<#(SEL)#>
+//                                                  andEvent:<#(UIControlEvents)#>]
     
     self.leftBtn=[ModelCreat createWithNormalImage:[UIImage imageNamed:@"pull_out.png"]
                                                andFrame:CGRectMake(0, 748/2-25, 50, 80)
@@ -418,8 +427,9 @@
     self.leftView.userInteractionEnabled = YES;
     [self.view addSubview:self.leftView];
     
+    
        
-    //左边view上的：博看家园，精英师资，就业明星，联系我们，厦门博看介绍，项目实训，校企合作，研发中心
+    //左边view上的：博看家园，精英师资，就业明星，联系我们，厦门博看介绍，项目实训，校企合作，在线报名
     for (int i=0; i<8; i++) {
         UIView * tmp =[ModelCreat
                            createWithView:[UIImage imageNamed:[NSString stringWithFormat:@"snav%d@2x",i+1]]
